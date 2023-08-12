@@ -3,12 +3,12 @@ module.exports = {
     async execute(interaction, client) {
         if (interaction.isChatInputCommand()) {
             const { commands } = client;
-            const { commandsName } = interaction;
-            const command = commands.get(commandsName);
+            const { commandName } = interaction;
+            const command = commands.get(commandName);
             if (!command) return;
 
             try {
-                await commands.execute(interaction, client);
+                await command.execute(interaction, client);
             } catch (error) {
                 console.log(error);
                 await interaction.reply({
