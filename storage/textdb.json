@@ -1,0 +1,8 @@
+{
+  "report": "If you think this is a mistake, please contact a developer or a higher staff(s).",
+  "ErrorCodes": {
+    "404": "[Not Found]: The command you are trying to visit is unavaliable or was never made.",
+    "403": "[Forbidden]: You're permissions forbidden's you from using this command",
+    "400": "[Success]: the request was sent to the bot successfully!"
+  }
+}

@@ -70,6 +70,7 @@ module.exports = {
     const initialMessage = await interaction.reply({
       embeds: [embed],
       components: components(false),
+      ephemeral: true,
     });
 
     const filter = (interaction) =>
